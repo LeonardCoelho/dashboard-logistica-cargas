@@ -35,6 +35,7 @@ dashboard-previsao-cargas/
 │   └── exemplo_dashboard.png
 ├── 📁 src/
 │   └── gerar_previsao.py
+│   └── Dashboard.pbix
 ├── README.md
 └── requirements.txt
 ```
