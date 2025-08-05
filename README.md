@@ -19,6 +19,9 @@ Criar um dashboard interativo que:
 
 ## 🧩 Estrutura do Dashboard
 
+📜 Script Python
+`gerar_previsao.py` gera previsões semanais de volume de cargas com base na série histórica, utilizando Prophet. Ele exporta os resultados em um arquivo `.xlsx` que é usado no Power BI.
+
 ### 📄 Página 1 — Histórico de Cargas
 
 > Visão analítica do que aconteceu na operação.
