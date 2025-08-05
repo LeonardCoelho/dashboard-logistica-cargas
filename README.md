@@ -75,7 +75,7 @@ Editar
 ![Histórico](images/Print%20Dashboard.jpg)
 
 ### Página 2 — Previsão de Cargas
-![Previsão](images/previsao.png)
+![Previsão](images/Print%20Dashboard.png)
 
 ---
 
