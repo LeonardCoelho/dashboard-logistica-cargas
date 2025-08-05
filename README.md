@@ -72,7 +72,7 @@ Editar
 ## 🖼️ Preview do Dashboard
 
 ### Página 1 — Histórico de Cargas
-![Histórico](images/historico.png)
+![Histórico](images/Print%20Dashboard.jpg)
 
 ### Página 2 — Previsão de Cargas
 ![Previsão](images/previsao.png)
