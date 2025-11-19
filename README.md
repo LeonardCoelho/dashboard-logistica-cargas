@@ -1,100 +1,120 @@
-# 🚛 Dashboard Logístico — Histórico e Previsão de Cargas
+# 📦 Dashboard de Desempenho Logístico — 2025 (Dados Sintéticos)
 
-Este projeto une duas frentes fundamentais da logística: o acompanhamento do **histórico de cargas** e a **previsão de volume futuro**, usando ferramentas de análise de dados e visualização com foco operacional e estratégico.
+Este projeto apresenta um **dashboard completo de performance logística**, construído com **Power BI**, utilizando **dados totalmente sintéticos** para simular um cenário real de operação.
 
-📍 Desenvolvido com base em dados reais da operação logística, o dashboard entrega uma visão completa para apoiar a **gestão de pátio, transportadoras e planejamento de demanda**.
-
----
-
-## 🎯 Objetivo
-
-Criar um dashboard interativo que:
-
-- Monitore indicadores logísticos em tempo real
-- Detecte gargalos na operação (atrasos, filas, pátio, transportadoras)
-- Projete o volume futuro de cargas com base em padrões históricos
-- Apoie a tomada de decisões no curto e médio prazo
+O objetivo é demonstrar **domínio em análise de dados, visualização, lógica de indicadores e storytelling analítico** aplicado ao contexto de logística e supply chain.
 
 ---
 
-## 🧩 Estrutura do Dashboard
+## 🚛 Objetivo do Projeto
 
-📜 Script Python
-`gerar_previsao.py` gera previsões semanais de volume de cargas com base na série histórica, utilizando Prophet. Ele exporta os resultados em um arquivo `.xlsx` que é usado no Power BI.
+Criar um painel que responda a perguntas-chave da operação logística, como:
 
-### 📄 Página 1 — Histórico de Cargas
+- Quais são as transportadoras responsáveis pela maior parte do volume?
+- Como está o frete distribuído por fornecedor?
+- Quais tipos de veículos mais carregam?
+- Há sazonalidade ou tendência nos carregamentos mensais?
+- Como está a pontualidade?
+- Quais os principais destinos?
 
-> Visão analítica do que aconteceu na operação.
+Tudo isso usando uma base **fictícia**, mas estruturada de forma fiel a uma operação real.
 
-- Volume de cargas por mês, semana e dia
-- Transportadoras com maior volume e atraso
-- Tempo médio no pátio
-- Cargas por cliente, rota ou perfil de veículo
-- Análise de sazonalidade e picos de operação
-- Filtros por data, centro de distribuição e tipo de carga
+---
 
-### 📈 Página 2 — Previsão de Cargas
+## 🧱 Estrutura do Projeto
 
-> Estimativa de volume para os próximos dias com base em padrões históricos.
+📁 dashboard-logistica-cargas/
+│
+├── 📁 data/
+│ ├── dados_sinteticos_cargas.xlsx # Base artificial usada no dashboard
+│
+├── 📁 powerbi/
+│ ├── dashboard_logistica.pbix # Arquivo do Power BI
+│
+├── 📁 img/
+│ ├── preview_dashboard.png # Screenshot do painel
+│
+└── README.md
 
-- Previsão diária para os próximos 30 dias
-- Comparativo “Real x Previsto”
-- Distribuição de cargas por dia da semana
-- Gráfico de tendência (volume previsto vs. histórico)
-- Projeção com base em média móvel ou modelos estatísticos (ex: Prophet, SARIMAX)
+---
+
+## 📊 Destaques do Dashboard
+
+- **Pareto 80/20 de Volume por Transportadora**
+- **Pareto 80/20 de Frete por Transportadora**
+- **Distribuição de Carregamentos por Tipo de Veículo**
+- **Tendência mensal de carregamentos**
+- **Mapa interativo com principais destinos**
+- **KPI de pontualidade**
+
+---
+
+## 🧪 Como os Dados Sintéticos Foram Gerados
+
+Os dados foram criados utilizando Python, com:
+
+- Distribuições proporcionais realistas (ex.: 80/20 entre transportadoras)
+- Campos típicos de operação logística:
+  - Transportadora
+  - Tipo de veículo
+  - Cidade / Estado
+  - Data do carregamento
+  - Quantidade de caixas
+  - Valor de frete
+  - Indicador de pontualidade
+- Volume simulado: ~15 milhões de caixas
+- Frete agregado simulado: ~40 milhões
+
+📌 *Nenhuma informação, estrutura ou valor real da empresa foi utilizado.*
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Power BI** — Visualização e interação
-- **Excel** — Pré-processamento dos dados
-- **Python (pandas / statsmodels / Prophet)** — Modelagem preditiva (opcional)
-- **DAX** — Criação de medidas e KPIs
-- **Power Query** — Transformações de dados
+- **Power BI**
+- **Python (para gerar dados sintéticos)**
+- **Pandas**
+- **NumPy**
+- **Matplotlib / Seaborn (validação dos dados)**
 
 ---
 
-## 📁 Estrutura do Projeto
+## ▶️ Como Reproduzir
 
-dashboard-logistica-cargas/
-├── 📊 Dashboard.pbix # Arquivo Power BI com as duas páginas
-├── 📁 data/ # Arquivos .xlsx usados no projeto
-├── 📁 images/ # Prints do dashboard para preview
-├── README.md
-
-yaml
-Copiar
-Editar
+1. Baixe o arquivo `.pbix` na pasta `powerbi/`.
+2. Abra no Power BI Desktop.
+3. Os dados sintéticos estão na pasta `data/`.
+4. Você pode editar o modelo, trocar parâmetros ou gerar novos dados.
 
 ---
 
-## 🖼️ Preview do Dashboard
+## 🚀 Possíveis Extensões
 
-### Página 1 — Histórico de Cargas
-![Histórico](images/dashboard_historico.jpg)
-
-### Página 2 — Previsão de Cargas
-![Previsão](images/dashboard_previsao.jpg)
-
----
-
-## ✅ Benefícios para a Logística
-
-- Antecipação de picos de volume e sobrecarga no pátio
-- Redução de atrasos com gestão proativa
-- Apoio à roteirização e escala de equipes
-- Base para KPIs em tempo real e planejamento semanal
+- Previsão de demanda com Prophet ou ARIMA
+- Dashboard de performance de transportadoras com ranking por KPI
+- Criação de API fake servindo dados logísticos
+- Versão web do dashboard usando Streamlit
 
 ---
 
-## 🧑‍💻 Autor
+## 📚 Lições Aprendidas
 
-**Leonardo Coelho**  
-Analista de Transportes | Estudante de Ciência de Dados  
-📍 Campinas/SP  
-📧 lnrds.coelho@gmail.com  
-🔗 [GitHub](https://github.com/LeonardCoelho) | [LinkedIn](https://linkedin.com/in/leonardcoelho)
+- Boa parte da operação logística pode ser resumida em poucos KPIs estratégicos.
+- Visualizações simples (Pareto, linha, barra e gauge) contam histórias poderosas.
+- A criação de dados sintéticos é essencial para portfólios profissionais na área.
+- Power BI + Python formam um combo forte para projetos de supply chain.
+
 ---
 
-📌 Projeto real aplicado no contexto logístico para facilitar decisões no pátio, transporte e previ
+## 📸 Preview
+
+> Cole aqui a imagem do dashboard  
+`img/preview_dashboard.png`
+
+---
+
+## ✉️ Contato
+
+[LinkedIn — Leonardo Souza Coelho](https://www.linkedin.com/in/leoscoelho/)
+
+Projetos de dados, logística, automação e IA.
