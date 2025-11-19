@@ -62,10 +62,8 @@ Os dados foram criados utilizando Python, com:
   - Quantidade de caixas
   - Valor de frete
   - Indicador de pontualidade
-- Volume simulado: ~15 milhões de caixas
-- Frete agregado simulado: ~40 milhões
-
-📌 *Nenhuma informação, estrutura ou valor real da empresa foi utilizado.*
+- Volume simulado: ~18 milhões de caixas
+- Frete agregado simulado: ~63 milhões
 
 ---
 
@@ -75,7 +73,6 @@ Os dados foram criados utilizando Python, com:
 - **Python (para gerar dados sintéticos)**
 - **Pandas**
 - **NumPy**
-- **Matplotlib / Seaborn (validação dos dados)**
 
 ---
 
@@ -108,8 +105,7 @@ Os dados foram criados utilizando Python, com:
 
 ## 📸 Preview
 
-> Cole aqui a imagem do dashboard  
-`img/preview_dashboard.png`
+![DASHBOARD](dashboard.jpg)
 
 ---
 
