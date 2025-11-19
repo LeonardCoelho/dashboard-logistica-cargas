@@ -105,7 +105,7 @@ Os dados foram criados utilizando Python, com:
 
 ## 📸 Preview
 
-![DASHBOARD](dashboard.jpg)
+![Dashboard Logístico](images/demonstração.gif)
 
 ---
 
