@@ -1,4 +1,4 @@
-# 📦 Dashboard de Desempenho Logístico — 2025 (Dados Sintéticos)
+# 📦 Dashboard Logístico
 
 Este projeto apresenta um **dashboard completo de performance logística**, construído com **Power BI**, utilizando **dados totalmente sintéticos** para simular um cenário real de operação.
 
